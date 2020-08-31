@@ -1,7 +1,7 @@
 <template>
   <div>
-    <input v-model="todoInfo"/>
-    <button v-on:click="addTodo">Add</button>
+    <el-input v-model="todoInfo" placeholder="pls input todo"></el-input>
+    <el-button type="primary" v-on:click="addTodo">Add</el-button>
   </div>
 </template>
 
@@ -23,5 +23,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .el-input {
+    width: 300px;
+  }
 </style>
